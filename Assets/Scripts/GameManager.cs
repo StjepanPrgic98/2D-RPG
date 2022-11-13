@@ -268,7 +268,6 @@ public class GameManager : MonoBehaviour
         listOfAbilities = new List<GameObject>();
         playerIsAlive = player.IsAlive();
         LoadSave();
-        Debug.Log("Chest ammount: " + chests.Length);
     }
 
 
@@ -1768,7 +1767,7 @@ public class GameManager : MonoBehaviour
     }
     public void RevivePlayer()
     {
-        StartCoroutine(WaitAndRevivePlayer(10));
+        StartCoroutine(WaitAndRevivePlayer(3));
     }
     IEnumerator WaitAndRevivePlayer(float delay)
     {
@@ -1990,7 +1989,7 @@ public class GameManager : MonoBehaviour
         {
             maxMaxHp = true;
         }
-        if(allChestsCollected == false && numberOfChestsCollected == 146)
+        if(allChestsCollected == false && numberOfChestsCollected == 148)
         {
             allChestsCollected = true;
         }      
@@ -1998,11 +1997,11 @@ public class GameManager : MonoBehaviour
         {
             allAttacksLearned = true;
         }
-        if(allAreasVisited == false && visitedAreas.Count == 7)
+        if(allAreasVisited == false && visitedAreas.Count == 11)
         {
             allAreasVisited = true;
         }
-        if(allSignsRead == false && visitedSigns.Count == 18)
+        if(allSignsRead == false && visitedSigns.Count == 19)
         {
             allSignsRead = true;
         }

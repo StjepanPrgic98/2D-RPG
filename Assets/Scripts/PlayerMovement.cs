@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
     Vector3 emptyVector = new Vector3(0, 0, 0);
     Vector3 inputVector;
 
+    float walkSpeedForAttacks = 0.8f;
+
     string lineBreak = "\n";
     [HideInInspector] public int playerPhysicalDamage = 1;
     [HideInInspector] public int playerPhysicalDefence = 1;
@@ -228,6 +230,11 @@ public class PlayerMovement : MonoBehaviour
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     //Setter methods
+    public void RevivePlayer()
+    {
+        isAlive = true;
+        restartButtonIsOn = false;
+    }
     public void SetActionTaken(bool argument)
     {
         actionIsTaken = argument;   
@@ -563,6 +570,7 @@ public class PlayerMovement : MonoBehaviour
         StartCoroutine(WaitAndReturnToIdle("isCasting", 0.4f));
         TimesHit("spell");
         audioPlayer.PlayWindProjectileClip();
+        gameManager.windProjectileCount--;
     }
     public void WindBreath()
     {
@@ -575,6 +583,7 @@ public class PlayerMovement : MonoBehaviour
         StartCoroutine(WaitAndReturnToIdle("isCasting", 0.4f));
         TimesHit("spell");
         audioPlayer.PlayWindBreathClip();
+        gameManager.windBreathCount--;
     }
     public void WaterTornado()
     {
@@ -1041,13 +1050,13 @@ public class PlayerMovement : MonoBehaviour
             }            
             if (clearToMove)
             {               
-                transform.position = Vector3.MoveTowards(transform.position, bossPositionToHit.transform.position, 0.015f);
+                transform.position = Vector3.MoveTowards(transform.position, bossPositionToHit.transform.position, walkSpeedForAttacks * Time.deltaTime);
                 animator.SetBool("isWalking", true);
                 if (transform.position == bossPositionToHit.transform.position)
                 {
                     animator.SetBool("isAttacking", true);
                     //StartCoroutine(WaitAndHurtBoss(0.1f, 1700));
-                    CheckWhatBossToHit(0.1f, IncreasePhysicalDamage(999999));
+                    CheckWhatBossToHit(0.1f, IncreasePhysicalDamage(1700));
                     audioPlayer.PlaySwing1Clip();
                     StartCoroutine(WaitAndStopAttackAnimation(0.45f, "isAttacking"));
                     isAttackingWithSword = false;
@@ -1070,7 +1079,7 @@ public class PlayerMovement : MonoBehaviour
             
             if (clearToMove)
             {
-                transform.position = Vector3.MoveTowards(transform.position, currentPosition, 0.015f);
+                transform.position = Vector3.MoveTowards(transform.position, currentPosition, walkSpeedForAttacks * Time.deltaTime);
                 animator.SetBool("isWalking", true);
                 transform.localScale = new Vector3(-1, 1, 1);
                 if (transform.position == currentPosition && clearToMove)
@@ -1107,14 +1116,14 @@ public class PlayerMovement : MonoBehaviour
                 }
                 if (clearToMove)
                 {                    
-                    transform.position = Vector3.MoveTowards(transform.position, bossPositionToHit.transform.position, 0.015f);
+                    transform.position = Vector3.MoveTowards(transform.position, bossPositionToHit.transform.position, walkSpeedForAttacks * Time.deltaTime);
                     animator.SetBool("isWalking", true);
                 }                     
             }
             if (transform.position == bossPositionToHit.transform.position || wasAtFeetPosition && wasAtHeadPosition == false)
             {               
                 wasAtFeetPosition = true;
-                transform.position = Vector3.MoveTowards(transform.position, bossPositionToHit.transform.position + aboveBoss, 0.035f);
+                transform.position = Vector3.MoveTowards(transform.position, bossPositionToHit.transform.position + aboveBoss, (walkSpeedForAttacks * 2) * Time.deltaTime);
                 animator.SetBool("isWalking", false);
                 animator.SetBool("returnToIdle", false);
                 animator.SetBool("isJumping", true);
@@ -1129,7 +1138,7 @@ public class PlayerMovement : MonoBehaviour
                     bossIsHit = true;
                 }               
                 wasAtHeadPosition = true;
-                transform.position = Vector3.MoveTowards(transform.position, bossPositionToHit.transform.position + new Vector3(0.2f, -0.05f, 0), 0.05f);
+                transform.position = Vector3.MoveTowards(transform.position, bossPositionToHit.transform.position + new Vector3(0.2f, -0.05f, 0), (walkSpeedForAttacks * 2) * Time.deltaTime);
                 animator.SetBool("isJumping", false);
                 animator.SetBool("airAttack1", true);
             }
@@ -1145,7 +1154,7 @@ public class PlayerMovement : MonoBehaviour
             }
             if (runBack)
             {
-                transform.position = Vector3.MoveTowards(transform.position, currentPosition, 0.015f);
+                transform.position = Vector3.MoveTowards(transform.position, currentPosition, walkSpeedForAttacks * Time.deltaTime);
                 animator.SetBool("isWalking", true);
                 transform.localScale = new Vector3(-1, 1, 1);
                 if (transform.position == currentPosition && clearToMove)
@@ -1189,7 +1198,7 @@ public class PlayerMovement : MonoBehaviour
             }
             if (clearToMove)
             {
-                transform.position = Vector3.MoveTowards(transform.position, bossPositionToHit.transform.position, 0.015f);
+                transform.position = Vector3.MoveTowards(transform.position, bossPositionToHit.transform.position, walkSpeedForAttacks * Time.deltaTime);
                 animator.SetBool("isWalking", true);
             }
             if(transform.position == bossPositionToHit.transform.position && clearToMove)
@@ -1205,7 +1214,7 @@ public class PlayerMovement : MonoBehaviour
             }
             if (attackIsOver)
             {
-                transform.position = Vector3.MoveTowards(transform.position, currentPosition, 0.015f);
+                transform.position = Vector3.MoveTowards(transform.position, currentPosition, walkSpeedForAttacks * Time.deltaTime);
                 animator.SetBool("isWalking", true);
                 transform.localScale = new Vector3(-1, 1, 1);
                 if (transform.position == currentPosition && attackIsOver)
@@ -1230,7 +1239,7 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("isWalking", true);
             transform.localScale = new Vector3(-1, 1, 1);
-            transform.position = Vector3.MoveTowards(transform.position, defenderFightFirstPosition.transform.position, 0.015f);
+            transform.position = Vector3.MoveTowards(transform.position, defenderFightFirstPosition.transform.position, walkSpeedForAttacks * Time.deltaTime);
         }
         if(transform.position == defenderFightFirstPosition.transform.position && retreatToFirstPosition)
         {
@@ -1243,7 +1252,7 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("isWalking", true);
             transform.localScale = new Vector3(-1, 1, 1);
-            transform.position = Vector3.MoveTowards(transform.position, defenderFightSecondPosition.transform.position, 0.015f);
+            transform.position = Vector3.MoveTowards(transform.position, defenderFightSecondPosition.transform.position, walkSpeedForAttacks * Time.deltaTime);
         }
         if(transform.position == defenderFightSecondPosition.transform.position && retreatToSecondPosition)
         {

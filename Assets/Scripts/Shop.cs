@@ -181,7 +181,7 @@ public class Shop : MonoBehaviour
                 gameManager.SpentMoney(2600);
                 gameManager.SpentMagicGem(1);
                 gameManager.playerHasFireExplosion = true;
-                gameManager.fireExplosionCount += 5;
+                gameManager.fireExplosionCount += 3;
                 fireSpells[i].SetActive(false);
                 audioPlayer.PlayShopBuyClip();
                 shopInformation.fireExplosionBought = true;
@@ -206,7 +206,7 @@ public class Shop : MonoBehaviour
                 gameManager.SpentMagicGem(2);
                 gameManager.SpentSpecialGem(1);
                 gameManager.playerHasNukeExplosion = true;
-                gameManager.nukeExplosionCount += 5;
+                gameManager.nukeExplosionCount += 3;
                 fireSpells[i].SetActive(false);
                 audioPlayer.PlayShopBuyClip();
                 shopInformation.nukeExplosionBought = true;
@@ -230,7 +230,7 @@ public class Shop : MonoBehaviour
                 gameManager.SpentMoney(1500);
                 gameManager.SpentMagicGem(1);
                 gameManager.playerHasWaterProjectile = true;
-                gameManager.waterProjectileCount += 5;
+                gameManager.waterProjectileCount += 3;
                 waterSpells[i].SetActive(false);
                 audioPlayer.PlayShopBuyClip();
                 shopInformation.waterProjectileBought = true;
@@ -255,7 +255,7 @@ public class Shop : MonoBehaviour
                 gameManager.SpentMagicGem(2);
                 gameManager.SpentSpecialGem(1);
                 gameManager.playerHasWaterTornado = true;
-                gameManager.waterTornadoCount += 5;
+                gameManager.waterTornadoCount += 3;
                 waterSpells[i].SetActive(false);
                 audioPlayer.PlayShopBuyClip();
                 shopInformation.waterTornadoBought = true;
@@ -279,7 +279,7 @@ public class Shop : MonoBehaviour
                 gameManager.SpentMoney(1500);
                 gameManager.SpentMagicGem(1);
                 gameManager.playerHasThunderProjectile = true;
-                gameManager.thunderProjectileCount += 5;
+                gameManager.thunderProjectileCount += 3;
                 thunderSpells[i].SetActive(false);
                 audioPlayer.PlayShopBuyClip();
                 shopInformation.thunderProjectileBought = true;
@@ -303,7 +303,7 @@ public class Shop : MonoBehaviour
                 gameManager.SpentMoney(1800);
                 gameManager.SpentMagicGem(1);
                 gameManager.playerHasThunderSplash = true;
-                gameManager.thunderSplashCount += 5;
+                gameManager.thunderSplashCount += 3;
                 thunderSpells[i].SetActive(false);
                 audioPlayer.PlayShopBuyClip();
                 shopInformation.thunderSplashBought = true;
@@ -327,7 +327,7 @@ public class Shop : MonoBehaviour
                 gameManager.SpentMoney(2200);
                 gameManager.SpentMagicGem(2);
                 gameManager.playerHasThunderHawk = true;
-                gameManager.thunderHawkCount += 5;
+                gameManager.thunderHawkCount += 3;
                 thunderSpells[i].SetActive(false);
                 audioPlayer.PlayShopBuyClip();
                 shopInformation.thunderHawkBought = true;
@@ -352,7 +352,7 @@ public class Shop : MonoBehaviour
                 gameManager.SpentMagicGem(2);
                 gameManager.SpentSpecialGem(1);
                 gameManager.playerHasThunderStrike = true;
-                gameManager.thunderStrikeCount += 5;
+                gameManager.thunderStrikeCount += 3;
                 thunderSpells[i].SetActive(false);
                 audioPlayer.PlayShopBuyClip();
                 shopInformation.thunderStrikeBought = true;
@@ -376,7 +376,7 @@ public class Shop : MonoBehaviour
                 gameManager.SpentMoney(1500);
                 gameManager.SpentMagicGem(1);
                 gameManager.playerHasIceProjectile = true;
-                gameManager.iceProjectileCount += 5;
+                gameManager.iceProjectileCount += 3;
                 iceSpells[i].SetActive(false);
                 audioPlayer.PlayShopBuyClip();
                 shopInformation.iceProjectileBought = true;
@@ -400,7 +400,7 @@ public class Shop : MonoBehaviour
                 gameManager.SpentMoney(1900);
                 gameManager.SpentMagicGem(2);
                 gameManager.playerHasIceSplash = true;
-                gameManager.iceSplashCount += 5;
+                gameManager.iceSplashCount += 3;
                 iceSpells[i].SetActive(false);
                 audioPlayer.PlayShopBuyClip();
                 shopInformation.iceSplashBought = true;
@@ -425,7 +425,7 @@ public class Shop : MonoBehaviour
                 gameManager.SpentMagicGem(2);
                 gameManager.SpentSpecialGem(1);
                 gameManager.playerHasIceGround = true;
-                gameManager.iceGroundCount += 5;
+                gameManager.iceGroundCount += 3;
                 iceSpells[i].SetActive(false);
                 audioPlayer.PlayShopBuyClip();
                 shopInformation.iceGroundBought = true;
@@ -449,7 +449,7 @@ public class Shop : MonoBehaviour
                 gameManager.SpentMoney(2100);
                 gameManager.SpentMagicGem(3);
                 gameManager.playerHasHolyProjectile = true;
-                gameManager.holyProjectileCount += 5;
+                gameManager.holyProjectileCount += 3;
                 holySpells[i].SetActive(false);
                 audioPlayer.PlayShopBuyClip();
                 shopInformation.holyProjectileBought = true;
@@ -474,7 +474,7 @@ public class Shop : MonoBehaviour
                 gameManager.SpentMagicGem(3);
                 gameManager.SpentSpecialGem(2);
                 gameManager.playerHasHolyGround = true;
-                gameManager.holyGroundCount += 5;
+                gameManager.holyGroundCount += 3;
                 holySpells[i].SetActive(false);
                 audioPlayer.PlayShopBuyClip();
                 shopInformation.holyGroundBought = true;
@@ -498,7 +498,7 @@ public class Shop : MonoBehaviour
                 gameManager.SpentMoney(4000);
                 gameManager.SpentSpecialGem(1);
                 gameManager.playerHasDamageBreak = true;
-                gameManager.damageBreakCount += 5;
+                gameManager.damageBreakCount += 3;
                 debuffs[i].SetActive(false);
                 audioPlayer.PlayShopBuyClip();
                 shopInformation.damageBreakBought = true;
@@ -522,7 +522,7 @@ public class Shop : MonoBehaviour
                 gameManager.SpentMoney(4000);
                 gameManager.SpentSpecialGem(1);
                 gameManager.playerHasDefenceBreak = true;
-                gameManager.defenceBreakCount += 5;
+                gameManager.defenceBreakCount += 3;
                 debuffs[i].SetActive(false);
                 audioPlayer.PlayShopBuyClip();
                 shopInformation.defenceBreakBought = true;
@@ -546,7 +546,7 @@ public class Shop : MonoBehaviour
                 gameManager.SpentMoney(3200);
                 gameManager.SpentSpecialGem(1);
                 gameManager.playerHasPoison = true;
-                gameManager.poisonCount += 5;
+                gameManager.poisonCount += 3;
                 debuffs[i].SetActive(false);
                 audioPlayer.PlayShopBuyClip();
                 shopInformation.poisonBought = true;
@@ -570,7 +570,7 @@ public class Shop : MonoBehaviour
                 gameManager.SpentMoney(3500);
                 gameManager.SpentSpecialGem(1);
                 gameManager.playerHasHaste = true;
-                gameManager.hasteCount += 5;
+                gameManager.hasteCount += 3;
                 buffs[i].SetActive(false);
                 audioPlayer.PlayShopBuyClip();
                 shopInformation.hasteBought = true;
@@ -594,7 +594,7 @@ public class Shop : MonoBehaviour
                 gameManager.SpentMoney(3500);
                 gameManager.SpentSpecialGem(1);
                 gameManager.playerHasSlow = true;
-                gameManager.slowCount += 5;
+                gameManager.slowCount += 3;
                 debuffs[i].SetActive(false);
                 audioPlayer.PlayShopBuyClip();
                 shopInformation.slowBought = true;
@@ -618,7 +618,7 @@ public class Shop : MonoBehaviour
                 gameManager.SpentMoney(3500);
                 gameManager.SpentSpecialGem(1);
                 gameManager.playerHasDispel = true;
-                gameManager.dispelCount += 5;
+                gameManager.dispelCount += 3;
                 debuffs[i].SetActive(false);
                 audioPlayer.PlayShopBuyClip();
                 shopInformation.dispelBought = true;
@@ -642,7 +642,7 @@ public class Shop : MonoBehaviour
                 gameManager.SpentMoney(3500);
                 gameManager.SpentSpecialGem(1);
                 gameManager.playerHasRegen = true;
-                gameManager.regenCount += 5;
+                gameManager.regenCount += 3;
                 heals[i].SetActive(false);
                 audioPlayer.PlayShopBuyClip();
                 shopInformation.regenBought = true;
@@ -666,7 +666,7 @@ public class Shop : MonoBehaviour
                 gameManager.SpentMoney(5000);
                 gameManager.SpentSpecialGem(1);
                 gameManager.playerHasProtect = true;
-                gameManager.protectCount += 5;
+                gameManager.protectCount += 3;
                 buffs[i].SetActive(false);
                 audioPlayer.PlayShopBuyClip();
                 shopInformation.protectBought = true;
@@ -690,7 +690,7 @@ public class Shop : MonoBehaviour
                 gameManager.SpentMoney(4000);
                 gameManager.SpentSpecialGem(1);
                 gameManager.playerHasHolyBarrier = true;
-                gameManager.holyBarrierCount += 5;
+                gameManager.holyBarrierCount += 3;
                 buffs[i].SetActive(false);
                 audioPlayer.PlayShopBuyClip();
                 shopInformation.holyBarrierBought = true;
@@ -714,7 +714,7 @@ public class Shop : MonoBehaviour
                 gameManager.SpentMoney(3900);
                 gameManager.SpentSpecialGem(1);
                 gameManager.playerHasOneHitShield = true;
-                gameManager.oneHitShieldCount += 5;
+                gameManager.oneHitShieldCount += 3;
                 buffs[i].SetActive(false);
                 audioPlayer.PlayShopBuyClip();
                 shopInformation.oneHitShieldBought = true;
@@ -738,7 +738,7 @@ public class Shop : MonoBehaviour
                 gameManager.SpentMoney(3500);
                 gameManager.SpentSpecialGem(1);
                 gameManager.playerHasDoubleHp = true;
-                gameManager.doubleHpCount += 5;
+                gameManager.doubleHpCount += 3;
                 buffs[i].SetActive(false);
                 audioPlayer.PlayShopBuyClip();
                 shopInformation.doubleHpBought = true;
@@ -762,7 +762,7 @@ public class Shop : MonoBehaviour
                 gameManager.SpentMoney(1500);
                 gameManager.SpentMagicGem(2);
                 gameManager.playerHasHeal = true;
-                gameManager.healCount += 5;
+                gameManager.healCount += 3;
                 heals[i].SetActive(false);
                 audioPlayer.PlayShopBuyClip();
                 shopInformation.healBought = true;
@@ -787,7 +787,7 @@ public class Shop : MonoBehaviour
                 gameManager.SpentMagicGem(3);
                 gameManager.SpentSpecialGem(1);
                 gameManager.playerHasLargeHeal = true;
-                gameManager.largeHealCount += 5;
+                gameManager.largeHealCount += 3;
                 heals[i].SetActive(false);
                 audioPlayer.PlayShopBuyClip();
                 shopInformation.largeHealBought = true;

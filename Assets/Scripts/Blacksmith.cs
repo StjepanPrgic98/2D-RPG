@@ -17,9 +17,9 @@ public class Blacksmith : MonoBehaviour
     [SerializeField] TextMeshProUGUI newAbilityText;
     AudioPlayer audioPlayer;
 
-    int upgradeWeaponCost = 500;
-    int upgradeDefenceCost = 500;
-    int upgradeMagicPowerCost = 500;
+    int upgradeWeaponCost = 1200;
+    int upgradeDefenceCost = 1000;
+    int upgradeMagicPowerCost = 800;
     bool weaponMaxUpgrade;
     bool defenceMaxUpgrade;
     bool magicPowerMaxUpgrade;
@@ -31,7 +31,7 @@ public class Blacksmith : MonoBehaviour
     int magicGemCost = 0;
     int magicSpecialGemCost = 0;
     int hpSpecialGemCost = 0;
-    int hpUpgradeCost = 1000;
+    int hpUpgradeCost = 1500;
 
    
 

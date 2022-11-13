@@ -42,6 +42,8 @@ public class Chests : MonoBehaviour
     [SerializeField] int sharpGems;
     [SerializeField] int specialGems;
     [SerializeField] int thunderCrystals;
+    [SerializeField] bool hasWindProjectile;
+    [SerializeField] bool hasWindBreath;
     
 
     
@@ -223,8 +225,20 @@ public class Chests : MonoBehaviour
         }
         if(thunderCrystals > 0)
         {
-            ItemFoundText("Thunder crystals found: " + thunderCrystals);
+            ItemFoundText("Thunder crystals found: " + thunderCrystals + " ");
             gameManager.FoundThunderCrystal(thunderCrystals);
+        }
+        if (hasWindProjectile)
+        {
+            ItemFoundText("Wind Projectile x2 casts: ");
+            gameManager.playerHasWindProjectile = true;
+            gameManager.windProjectileCount += 2;
+        }
+        if (hasWindBreath)
+        {
+            ItemFoundText("Wind Breath x2 casts: ");
+            gameManager.playerHasWindBreath = true;
+            gameManager.windBreathCount += 2;
         }
 
 

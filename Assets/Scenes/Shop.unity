@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Damage Break! Casts: 5x
+  m_text: 'Damage Break! Casts: 3x
 
     Price:  4000
 
@@ -1519,7 +1519,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 167272512}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.60033196, y: 0.5660552, z: -11.377388}
+  m_LocalPosition: {x: -0.23033193, y: 0.23605514, z: -11.377388}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1803,7 +1803,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Thunder Projectile! Casts: 5x
+  m_text: 'Thunder Projectile! Casts: 3x
 
     Price: 1500
 
@@ -2627,7 +2627,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8533249248220066406, guid: 058b79528587afa43a180f3ca27fec39, type: 3}
       propertyPath: money
-      value: 999999
+      value: 3500
       objectReference: {fileID: 0}
     - target: {fileID: 8533249248220066406, guid: 058b79528587afa43a180f3ca27fec39, type: 3}
       propertyPath: chestID
@@ -2639,11 +2639,11 @@ PrefabInstance:
       objectReference: {fileID: -1687550776, guid: f70eb7a0741799e4d84b4de8929ed0a3, type: 3}
     - target: {fileID: 8533249248220066406, guid: 058b79528587afa43a180f3ca27fec39, type: 3}
       propertyPath: magicGems
-      value: 99
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8533249248220066406, guid: 058b79528587afa43a180f3ca27fec39, type: 3}
       propertyPath: sharpGems
-      value: 99
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8533249248220066406, guid: 058b79528587afa43a180f3ca27fec39, type: 3}
       propertyPath: emptySprite
@@ -2651,7 +2651,15 @@ PrefabInstance:
       objectReference: {fileID: -1687550776, guid: f70eb7a0741799e4d84b4de8929ed0a3, type: 3}
     - target: {fileID: 8533249248220066406, guid: 058b79528587afa43a180f3ca27fec39, type: 3}
       propertyPath: specialGems
-      value: 99
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8533249248220066406, guid: 058b79528587afa43a180f3ca27fec39, type: 3}
+      propertyPath: hasWindBreath
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8533249248220066406, guid: 058b79528587afa43a180f3ca27fec39, type: 3}
+      propertyPath: hasWindProjectile
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8533249248220066407, guid: 058b79528587afa43a180f3ca27fec39, type: 3}
       propertyPath: m_Sprite
@@ -2898,6 +2906,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 2981415042866132656, guid: 21a1db9ad2a685448bec1881ca484eec, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1892703499}
+    - target: {fileID: 2981415042866132656, guid: 21a1db9ad2a685448bec1881ca484eec, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1892703499}
+    - target: {fileID: 2981415042866132656, guid: 21a1db9ad2a685448bec1881ca484eec, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadSceneOutside
+      objectReference: {fileID: 0}
+    - target: {fileID: 2981415042866132656, guid: 21a1db9ad2a685448bec1881ca484eec, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: RevivePlayer
+      objectReference: {fileID: 0}
     - target: {fileID: 3038142717244136165, guid: 21a1db9ad2a685448bec1881ca484eec, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2966,6 +2990,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7277405935665087988, guid: 21a1db9ad2a685448bec1881ca484eec, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8470444272745140833, guid: 21a1db9ad2a685448bec1881ca484eec, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -3026,7 +3054,7 @@ MonoBehaviour:
   button1: {fileID: 0}
   button2: {fileID: 0}
   textObject: {fileID: 1678474041}
-  text: {fileID: 1678474042}
+  text: {fileID: 995756010}
   normalSprite: {fileID: -5746245, guid: 3c3e0dddd144f9c4985a17a8a42e928c, type: 3}
   pulledSprite: {fileID: 1683457548, guid: 3c3e0dddd144f9c4985a17a8a42e928c, type: 3}
   leverForPower: 0
@@ -3685,6 +3713,103 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &325200099
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1444246600}
+    m_Modifications:
+    - target: {fileID: 5593073861100767213, guid: c17ad9dc296973a4abf177079ab56d3a, type: 3}
+      propertyPath: m_Name
+      value: AreaNameCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593073861100767214, guid: c17ad9dc296973a4abf177079ab56d3a, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593073861100767214, guid: c17ad9dc296973a4abf177079ab56d3a, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593073861100767214, guid: c17ad9dc296973a4abf177079ab56d3a, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593073861100767214, guid: c17ad9dc296973a4abf177079ab56d3a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593073861100767214, guid: c17ad9dc296973a4abf177079ab56d3a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593073861100767214, guid: c17ad9dc296973a4abf177079ab56d3a, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593073861100767214, guid: c17ad9dc296973a4abf177079ab56d3a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593073861100767214, guid: c17ad9dc296973a4abf177079ab56d3a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593073861100767214, guid: c17ad9dc296973a4abf177079ab56d3a, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593073861100767214, guid: c17ad9dc296973a4abf177079ab56d3a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593073861100767214, guid: c17ad9dc296973a4abf177079ab56d3a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593073861100767214, guid: c17ad9dc296973a4abf177079ab56d3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593073861100767214, guid: c17ad9dc296973a4abf177079ab56d3a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593073861100767214, guid: c17ad9dc296973a4abf177079ab56d3a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593073861100767214, guid: c17ad9dc296973a4abf177079ab56d3a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593073861100767214, guid: c17ad9dc296973a4abf177079ab56d3a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593073861100767214, guid: c17ad9dc296973a4abf177079ab56d3a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593073861100767214, guid: c17ad9dc296973a4abf177079ab56d3a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593073861100767214, guid: c17ad9dc296973a4abf177079ab56d3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593073861100767214, guid: c17ad9dc296973a4abf177079ab56d3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593073861100767214, guid: c17ad9dc296973a4abf177079ab56d3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c17ad9dc296973a4abf177079ab56d3a, type: 3}
 --- !u!1 &325807497
 GameObject:
   m_ObjectHideFlags: 0
@@ -37693,6 +37818,17 @@ MonoBehaviour:
   id: 14
   isSign: 1
   isArea: 0
+--- !u!114 &706440443 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5593073862563826420, guid: c17ad9dc296973a4abf177079ab56d3a, type: 3}
+  m_PrefabInstance: {fileID: 325200099}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &722209552
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37963,7 +38099,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Thunder Strike! Casts: 5x
+  m_text: 'Thunder Strike! Casts: 3x
 
     Price: 3500
 
@@ -38508,7 +38644,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Double Hp! Casts: 5x
+  m_text: 'Double Hp! Casts: 3x
 
     Price 3500
 
@@ -38804,7 +38940,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Haste! Casts: 5x
+  m_text: 'Haste! Casts: 3x
 
     Price 3500
 
@@ -39288,11 +39424,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1437754267798945690, guid: 3614b6c733dedac418b74e9f4a5b0154, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.03
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1437754267798945690, guid: 3614b6c733dedac418b74e9f4a5b0154, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.77
+      value: -1.1
       objectReference: {fileID: 0}
     - target: {fileID: 1437754267798945690, guid: 3614b6c733dedac418b74e9f4a5b0154, type: 3}
       propertyPath: m_LocalPosition.z
@@ -39344,7 +39480,7 @@ PrefabInstance:
       objectReference: {fileID: 183844235}
     - target: {fileID: 1437754267798945691, guid: 3614b6c733dedac418b74e9f4a5b0154, type: 3}
       propertyPath: moveSpeed
-      value: 80
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 1437754267798945691, guid: 3614b6c733dedac418b74e9f4a5b0154, type: 3}
       propertyPath: battleText
@@ -40218,7 +40354,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Heal! Casts: 5x
+  m_text: 'Heal! Casts: 3x
 
     Price 1500
 
@@ -40941,7 +41077,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Ice Projectile! Casts: 5x
+  m_text: 'Ice Projectile! Casts: 3x
 
     Price: 1500
 
@@ -42001,7 +42137,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 957559707}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.60033196, y: 0.5660552, z: -11.377388}
+  m_LocalPosition: {x: -0.23033193, y: 0.23605514, z: -11.377388}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42760,7 +42896,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Fire Explosion! Casts: 5x\nPrice: 2600!          \nMagic gems required:
+  m_text: "Fire Explosion! Casts: 3x\nPrice: 2600!          \nMagic gems required:
     1!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ae27e03964757fc4da65ca902fe48da1, type: 2}
@@ -43841,7 +43977,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Regen! Casts: 5x
+  m_text: 'Regen! Casts: 3x
 
     Price 5000
 
@@ -44513,7 +44649,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Thunder Splash! Casts: 5x
+  m_text: 'Thunder Splash! Casts: 3x
 
     Price: 1800
 
@@ -44786,7 +44922,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Defence Break! Casts: 5x
+  m_text: 'Defence Break! Casts: 3x
 
     Price:  4000
 
@@ -56699,7 +56835,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Water Projectile! Casts: 5x
+  m_text: 'Water Projectile! Casts: 3x
 
     Price: 1500
 
@@ -58586,7 +58722,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Large Heal! Casts: 5x
+  m_text: 'Large Heal! Casts: 3x
 
     Price 3500
 
@@ -59132,7 +59268,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Ice Splash! Casts: 5x
+  m_text: 'Ice Splash! Casts: 3x
 
     Price: 1900
 
@@ -59271,7 +59407,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Holy Barrier! Casts: 5x\nPrice: 4000\nSpecial gems required: 1!\nEffect:
+  m_text: "Holy Barrier! Casts: 3x\nPrice: 4000\nSpecial gems required: 1!\nEffect:
     Reduces incoming damage by 66% \nfor 3 turns!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ae27e03964757fc4da65ca902fe48da1, type: 2}
@@ -60313,7 +60449,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Holy Projectile! Casts: 5x
+  m_text: 'Holy Projectile! Casts: 3x
 
     Price: 2100
 
@@ -60800,7 +60936,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Protect! Casts: 5x
+  m_text: 'Protect! Casts: 3x
 
     Price: 5000
 
@@ -61652,7 +61788,7 @@ MonoBehaviour:
   button1: {fileID: 0}
   button2: {fileID: 0}
   textObject: {fileID: 1678474041}
-  text: {fileID: 1678474042}
+  text: {fileID: 995756010}
   normalSprite: {fileID: -5746245, guid: 3c3e0dddd144f9c4985a17a8a42e928c, type: 3}
   pulledSprite: {fileID: 1683457548, guid: 3c3e0dddd144f9c4985a17a8a42e928c, type: 3}
   leverForPower: 0
@@ -62419,17 +62555,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2981415041508288217, guid: 21a1db9ad2a685448bec1881ca484eec, type: 3}
   m_PrefabInstance: {fileID: 258636974}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1678474042 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2981415041508288219, guid: 21a1db9ad2a685448bec1881ca484eec, type: 3}
-  m_PrefabInstance: {fileID: 258636974}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1678474041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1691450655
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63508,7 +63633,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Slow! Casts: 5x
+  m_text: 'Slow! Casts: 3x
 
     Price:  4000
 
@@ -63734,7 +63859,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Water Tornado! Casts: 5x
+  m_text: 'Water Tornado! Casts: 3x
 
     Price: 3500
 
@@ -64011,7 +64136,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Nuke Explosion! Casts: 5x
+  m_text: 'Nuke Explosion! Casts: 3x
 
     Price: 3500
 
@@ -64153,7 +64278,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Thunder Hawk! Casts: 5x
+  m_text: 'Thunder Hawk! Casts: 3x
 
     Price: 2200
 
@@ -64639,7 +64764,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Dispel! Casts: 5x
+  m_text: 'Dispel! Casts: 3x
 
     Price: 3200
 
@@ -64855,7 +64980,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Holy Ground! Casts: 5x
+  m_text: 'Holy Ground! Casts: 3x
 
     Price: 4000
 
@@ -65301,7 +65426,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "One Hit Shield! Casts: 5x\nPrice 3900\nSpecial gems required: 1!\nEffect:
+  m_text: "One Hit Shield! Casts: 3x\nPrice 3900\nSpecial gems required: 1!\nEffect:
     Reduces damage of the next hit \nby 75%!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ae27e03964757fc4da65ca902fe48da1, type: 2}
@@ -71539,7 +71664,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Poison! Casts: 5x
+  m_text: 'Poison! Casts: 3x
 
     Price: 3200
 
@@ -72630,7 +72755,7 @@ PrefabInstance:
     - target: {fileID: 4526950136181107604, guid: 4b3f2900415daa34ab9fe780c14c8ac6, type: 3}
       propertyPath: hintText
       value: 
-      objectReference: {fileID: 995756010}
+      objectReference: {fileID: 706440443}
     - target: {fileID: 4526950136181107604, guid: 4b3f2900415daa34ab9fe780c14c8ac6, type: 3}
       propertyPath: hintTextObject
       value: 
@@ -73492,7 +73617,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Ice Ground! Casts: 5x
+  m_text: 'Ice Ground! Casts: 3x
 
     Price: 3200
 
