@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/StartScreen.unity
+    guid: 5fa081c2b893dbf4b827d6d281a8ce7b
+  - enabled: 1
+    path: Assets/Scenes/Dungeon.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Outside.unity
+    guid: 5edda0a91692c8e4b8a3a581554f278b
+  - enabled: 1
+    path: Assets/Scenes/Shop.unity
+    guid: 0ba53636a1db11146bf8cbb3b5b8e20f
+  - enabled: 1
+    path: Assets/Scenes/UnderCastle.unity
+    guid: 898ebfbef09133b409ca67dfa1cc429e
+  m_configObjects: {}

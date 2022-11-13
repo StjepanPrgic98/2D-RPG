@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2993737236863533071
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2993737236863533069}
+  - component: {fileID: 2993737236863533068}
+  - component: {fileID: 570726008}
+  m_Layer: 0
+  m_Name: AudioPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2993737236863533069
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2993737236863533071}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20.000048, y: -26.624878, z: 3.5754597}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2993737236863533068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2993737236863533071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eaf1c29c4122b24f89f6f8bb6bef8c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thunderStrike: {fileID: 8300000, guid: cd1ad6b2da2350b449772be02496c28b, type: 3}
+  thunderSplash: {fileID: 8300000, guid: 4033c9b9d8abff84aa49e0ddb8212cb0, type: 3}
+  thunderHawkEagle: {fileID: 8300000, guid: 541005e3a2a918348b475806aa46888f, type: 3}
+  thunderHawkImpact: {fileID: 8300000, guid: c33775f10b221a94e98f7283e5746201, type: 3}
+  thunderProjectileStart: {fileID: 8300000, guid: f338adf37beac49448572dacb8f8082a, type: 3}
+  waterTornado: {fileID: 8300000, guid: 1a0f53e6fd22dad43a9ce99b6585e763, type: 3}
+  waterProjectileImpact: {fileID: 8300000, guid: 6b47bafbffddd7944b3d5dc745e05fec, type: 3}
+  waterProjectile: {fileID: 8300000, guid: 85c955803b7e79247aa3ee2b1eb0cb82, type: 3}
+  fireExplosion: {fileID: 8300000, guid: d37fb9fbbde597141a9ea6d7a61e0f18, type: 3}
+  nukeExplosion: {fileID: 8300000, guid: 326f9ca2f15d5c44b9f35d68f042ed7c, type: 3}
+  nukeShine: {fileID: 8300000, guid: b7b3a60f58950ef46916df97db810ccc, type: 3}
+  slow: {fileID: 8300000, guid: cef51ca2cbe3a394b8863c150dc5070a, type: 3}
+  haste: {fileID: 8300000, guid: 09f3a8229ab9fca4393c41e4f0b27538, type: 3}
+  drawSword: {fileID: 8300000, guid: 7c50d2bfed69ba54d85b3384e7b140c4, type: 3}
+  sheatSword: {fileID: 8300000, guid: a1de01a23d2942b448922b36f168f473, type: 3}
+  iceSplash: {fileID: 8300000, guid: ffccc7b0f96254741b72e21e892f98bd, type: 3}
+  iceGround: {fileID: 8300000, guid: 1c8f51e056b632043a28129375b82ef7, type: 3}
+  iceProjectileStart: {fileID: 8300000, guid: 13c0b771b14f02e4499a5bd4976f4a3a, type: 3}
+  iceProjectile: {fileID: 8300000, guid: 1f4190bfb2d5c9e40a7ef17ca10ea2d1, type: 3}
+  holyGround: {fileID: 8300000, guid: 9ac1a19a9a607bc40beca404acd2b70b, type: 3}
+  holyProjectileImpact: {fileID: 8300000, guid: 5687b3796d2857341885afd038bc2411, type: 3}
+  holyProjectile: {fileID: 8300000, guid: d4f51ed415acb2847b722c312e39d5c5, type: 3}
+  dispel: {fileID: 8300000, guid: d771d89c9d20dd44488f23e321402412, type: 3}
+  slash: {fileID: 8300000, guid: a3aeac4f74a4ffb4098c120ad52a1b48, type: 3}
+  poison: {fileID: 8300000, guid: 5ccce8917c954574cb04d348ab4fe7ef, type: 3}
+  heal: {fileID: 8300000, guid: b9faea3a0ba142243adca0f63e24106a, type: 3}
+  protect: {fileID: 8300000, guid: a60609bf4dac99547be2abcbef4cad7f, type: 3}
+  oneHitShield: {fileID: 8300000, guid: 5b70a79c11abde44ea5b098c1607b059, type: 3}
+  doubleHp: {fileID: 8300000, guid: 4f3e0f89e2c43144cb7b6624a67f1624, type: 3}
+  windBreath: {fileID: 8300000, guid: ee20f4e845bcce2458ebd3d676b753a0, type: 3}
+  windProjectile: {fileID: 8300000, guid: 1b71a7a1834768c45b1c89393cc5207f, type: 3}
+  windProjectileImpact: {fileID: 8300000, guid: 0c7268fab3b09c248b28c6506c8e577f, type: 3}
+  inventory: {fileID: 8300000, guid: 9fabd32ec43cfc34ba568ece3cef0a69, type: 3}
+  upgradeClip: {fileID: 8300000, guid: 2e011b852bdbc9946906cd8a5f9c4530, type: 3}
+  shopBuyClip: {fileID: 8300000, guid: 36d3dd1a4da13fb4fb025a95cac1b60a, type: 3}
+  cantBuyClip: {fileID: 8300000, guid: 524aa22131130ce49a936621fff53372, type: 3}
+  chestClip: {fileID: 8300000, guid: 2b97174c5bf0ddb45afffeb672604bac, type: 3}
+  slap: {fileID: 8300000, guid: 78527120ba9c57c409a8ee8423bb7a7a, type: 3}
+  swing1: {fileID: 8300000, guid: 6514be4d3e4beec4f992b383c17a441b, type: 3}
+  swing2: {fileID: 8300000, guid: 6514be4d3e4beec4f992b383c17a441b, type: 3}
+  swing3: {fileID: 8300000, guid: 6514be4d3e4beec4f992b383c17a441b, type: 3}
+  spikes: {fileID: 8300000, guid: d5acde381e7852a44a1f0f79b8c35107, type: 3}
+  summon: {fileID: 8300000, guid: 5edff767a4b557f409aff2ad6a6bf673, type: 3}
+  scream: {fileID: 8300000, guid: e10cb82b659464e4bb57ac5fdbd05312, type: 3}
+  darkSpell: {fileID: 8300000, guid: 4e17df23f68d02842b286e2d3ba2cdd5, type: 3}
+  darkBoulder: {fileID: 8300000, guid: 67a0e250020fd304b9c5c5dde78d0be9, type: 3}
+  darkCast: {fileID: 8300000, guid: ff43bbd41ff2e9a41949a9dd74037b32, type: 3}
+  curse: {fileID: 8300000, guid: 4d41c4490bce9ef46af47e10ecaffe02, type: 3}
+  oblivion: {fileID: 8300000, guid: 55ce18aca939da648b2dd2be6b473c70, type: 3}
+  nightborneDeath: {fileID: 8300000, guid: d92dd2eb585eec2439552bb6da0c09ab, type: 3}
+  pressurePlate: {fileID: 8300000, guid: 35a2f56fbba14cb4bb060801ff3d3d3f, type: 3}
+  lockedDoor: {fileID: 8300000, guid: dc1787e0ef4b7bc46b09393d64ec93b9, type: 3}
+  unlockDoor: {fileID: 8300000, guid: 56e476440cc292a45a84b4abfcf9073e, type: 3}
+  button: {fileID: 8300000, guid: bfc1bf47318f021408b92e08b7df5e56, type: 3}
+  sidequestDone: {fileID: 8300000, guid: 4662d615c7fcf884c98d9d7a9a0abc37, type: 3}
+  lever: {fileID: 8300000, guid: 140bd06892bf8114894b1cfa793a4c92, type: 3}
+  holyWaterBarrel: {fileID: 8300000, guid: 828bce1c9d03ba943bc71bc4f75a84ec, type: 3}
+  totemBeep: {fileID: 8300000, guid: ad6637fec3a8e37448f8bc9bc7cd82ca, type: 3}
+  totemEnd: {fileID: 8300000, guid: 4d0f1ea05a920b249b4e7f16a4b30862, type: 3}
+  energyBallLoop: {fileID: 8300000, guid: db51a4e52260116469592698e60b4495, type: 3}
+  energyBallImpact: {fileID: 8300000, guid: 150b0c1adfb93eb419bf51911408da46, type: 3}
+  volume: 1
+  lowVolume: 0.25
+  highVolume: 0.737
+--- !u!114 &570726008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2993737236863533071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0588ad4bbc313e2448f449147788650d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

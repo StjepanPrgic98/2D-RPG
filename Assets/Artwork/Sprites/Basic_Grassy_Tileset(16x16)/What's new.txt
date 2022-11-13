@@ -1,0 +1,5 @@
+0.1 
+- Creation
+0.2
+- Improved outer wall area, made it cleaner
+- Changed the character from 16x16 to 24x24 for better ratio
